@@ -35,5 +35,12 @@
         android:layout_marginBottom="16dp"
         android:text="@string/menghitung_volume"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_view_group"
+        android:layout_marginBottom="16dp"
+        android:text="@string/view_and_view_group"
+        />
 
 </LinearLayout>

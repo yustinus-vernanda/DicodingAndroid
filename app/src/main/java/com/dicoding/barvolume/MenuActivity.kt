@@ -20,6 +20,8 @@ class MenuActivity : AppCompatActivity(), View.OnClickListener {
         btnDialNumber.setOnClickListener(this)
         val btnVolumeActivity : Button = findViewById(R.id.btn_volume_activity)
         btnVolumeActivity.setOnClickListener(this)
+        val btnViewGroup: Button = findViewById(R.id.btn_view_group)
+        btnViewGroup.setOnClickListener(this)
     }
 
     override fun onClick(v: View?){
@@ -42,6 +44,10 @@ class MenuActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_volume_activity->{
                 val moveActivity = Intent(this@MenuActivity,VolumeActivity::class.java)
                 startActivity(moveActivity)
+            }
+            R.id.btn_view_group->{
+                val moveViewGroupActivity = Intent(this@MenuActivity,ViewGroupActivity::class.java)
+                startActivity(moveViewGroupActivity)
             }
         }
     }
