@@ -11,6 +11,6 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text="@string/data_received"
-        android:id="@+id/data_received"/>
+        android:id="@+id/tv_data_received_move"/>
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.dicoding.barvolume
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -15,6 +16,8 @@ class MenuActivity : AppCompatActivity(), View.OnClickListener {
         btnMoveActivity.setOnClickListener(this)
         val btnMoveWithDataActivity : Button = findViewById(R.id.btn_move_with_data)
         btnMoveWithDataActivity.setOnClickListener(this)
+        val btnDialNumber : Button = findViewById(R.id.btn_dial_number)
+        btnDialNumber.setOnClickListener(this)
         val btnVolumeActivity : Button = findViewById(R.id.btn_volume_activity)
         btnVolumeActivity.setOnClickListener(this)
     }
@@ -30,6 +33,11 @@ class MenuActivity : AppCompatActivity(), View.OnClickListener {
                 moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME,"Dicoding Academy Boy")
                 moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE,5)
                 startActivity(moveWithDataIntent)
+            }
+            R.id.btn_dial_number->{
+                val phoneNumber = "08991005242"
+                val dialPhoneIntent = Intent(Intent.ACTION_VIEW, Uri.parse("tel:$phoneNumber"))
+                startActivity(dialPhoneIntent)
             }
             R.id.btn_volume_activity->{
                 val moveActivity = Intent(this@MenuActivity,VolumeActivity::class.java)
