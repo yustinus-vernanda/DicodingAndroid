@@ -43,4 +43,12 @@
         android:text="@string/view_and_view_group"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_recycler_view"
+        android:layout_marginBottom="16dp"
+        android:text="@string/recyler_view"
+        />
+
 </LinearLayout>

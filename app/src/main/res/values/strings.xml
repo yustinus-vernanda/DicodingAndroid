@@ -35,5 +35,12 @@
     <string name="dummy_value">$735</string>
     <string name="dummy_photos">6 photos</string>
     <string name="view_and_view_group">View and View Group</string>
-
+    <string name="recyler_view">Recyler View</string>
+    <string name="heroes_name">Nama Pahlawan</string>
+    <string name="detail">Detail</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="with_cardview">with CardView</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
 </resources>
